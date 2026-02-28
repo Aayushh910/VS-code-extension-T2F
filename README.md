@@ -1,65 +1,81 @@
-# testext README
+# 🌳 Tree Structure to Folder Creator (VS Code Extension)
 
-This is the README for your extension "testext". After writing up a brief description, we recommend including the following sections.
+This extension allows you to quickly create folders and files in your project using a tree structure.
 
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Instead of manually creating folders one by one, you can define the structure — and the extension will generate everything automatically.
 
 ---
 
-## Working with Markdown
+## 📌 What This Extension Does
 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+You provide a tree structure of your project, and the extension will create the same folders and files inside your workspace.
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
+---
 
-## For more information
+## 🚀 Features
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+- Create complete folder structure instantly  
+- Supports nested folders and files  
+- Saves time and manual effort  
+- Simple and easy to use  
 
-**Enjoy!**
+---
+
+## ⚙️ Supported Format (Important)
+
+⚠️ Only **dotted tree structure** is supported.
+
+✅You must use this format:
+```
+src
+├── app.xyz
+├── components
+│ ├── navbar.xyz
+│ └── footer.xyz
+├── pages
+│ ├── home.xyz
+│ └── about.xyz
+main.xyz
+```
+❌ Do NOT use this format:
+```
+src/
+app.js
+   components
+     navbar.xyz
+     footer.xyz
+   pages
+main.xyz
+```
+
+
+## ▶️ How to Run the Extension (Development Mode)
+
+Since the extension is not published yet, you need to run it locally:
+
+1. Open this project folder in VS Code  
+2. Press `F5`  
+3. A new VS Code window will open (Extension Development Host)  
+4. In that window, press `Ctrl + Shift + P`  
+5. Run your extension command  
+6. Paste the dotted tree structure  
+7. The folders/files will be created  
+
+---
+## ⚠️ Note
+
+- Use correct tree symbols: `├──`, `│`, `└──`  
+- Invalid format may not work properly  
+
+---
+
+## 🛠 Tech
+
+- VS Code Extension API  
+- TypeScript / JavaScript  
+
+---
+
+## © Copyright
+
+© 2026 Aayush Savaliya
