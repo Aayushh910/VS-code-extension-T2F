@@ -1,0 +1,22 @@
+{
+  "name": "tree-to-folder",
+  "displayName": "Tree to Folder Generator",
+  "description": "Generate folder structure from tree input",
+  "version": "0.0.1",
+  "publisher": "aayush", 
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:testext.generate"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "testext.generate",
+        "title": "Generate Folder Structure"
+      }
+    ]
+  },
+  "keywords": ["folder", "tree", "generator", "structure"]
+}
